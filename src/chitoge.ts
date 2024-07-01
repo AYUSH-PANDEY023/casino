@@ -18,17 +18,17 @@ import ModsChecker from "./Checkers/ModsChecker";
 if (!process.env.MONGO_URI) throw new Error("MONGO URL IS NOT PROVIDED");
 const client = new WAClient({
   name: process.env.NAME || "Chitoge",
-  session: process.env.SESSION || "Chitoge",
-  prefix: process.env.PREFIX || ":",
-  mods: (process.env.MODS || "")
+  session: process.env.SESSION || "AKP",
+  prefix: process.env.PREFIX || "-",
+  mods: (process.env.MODS || "919931122319")
     .split(", ")
     .map((number) => `${number}@s.whatsapp.net`),
-  gkey: process.env.GOOGLE_API_KEY || "",
-  chatBotUrl: process.env.CHAT_BOT_URL || "",
-  gifApi: process.env.TENOR_API_KEY || "",
-  geniusKey: process.env.GENIUS_KEY || "",
-  malUsername: process.env.MAL_USERNAME || "",
-  malPassword: process.env.MAL_PASSWORD || "",
+  gkey: process.env.GOOGLE_API_KEY || "#",
+  chatBotUrl: process.env.CHAT_BOT_URL || "http://api.brainshop.ai/get?bid=180857&key=SeLyK3P24U91Ed7a&uid=[Mariabot]&msg=[text]",
+  gifApi: process.env.TENOR_API_KEY || "#",
+  geniusKey: process.env.GENIUS_KEY || "#",
+  malUsername: process.env.MAL_USERNAME || "#",
+  malPassword: process.env.MAL_PASSWORD || "#",
 });
 client.log("Starting...");
 
